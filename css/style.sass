@@ -137,6 +137,8 @@ main
       display: flex
       flex-direction: column
       gap: 5px
+      transition: all .5s
+
 
     .question
       display: flex
@@ -178,9 +180,10 @@ main
         line-height: 150%
         color: $gray
         z-index: 1
+        
         &.switch
           transform: translateY(0px)
-          height: initial
+          height: auto
           opacity: 1
           display: block
 
@@ -300,3 +303,14 @@ footer
         cursor: pointer
         &:hover
           color: $green
+
+main
+  h2.static
+    text-align: center
+  .static
+    &.content
+      width: 100%
+      padding-left: 0
+
+
+
